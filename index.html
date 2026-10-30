@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION BAR ========== -->
+  <header class="navbar">
+    <a href="#home" class="brand">Your<span>Name</span></a>
+
+    <nav id="nav" class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Field Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeBtn" class="icon-btn" aria-label="Switch theme">🌙</button>
+      <button id="menuBtn" class="icon-btn menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hello, I'm</p>
+        <h1>Your Full Name</h1>
+        <h2>I am a <span id="role" class="role">Network Technician</span><span class="cursor">|</span></h2>
+        <p class="intro">
+          I install, maintain and troubleshoot internet and fibre networks in the field,
+          and I am building my skills in web development on the side.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Hire / Contact Me</a>
+          <a href="#work" class="btn btn-outline">See My Work</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="profile.jpg" alt="My profile picture">
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section">
+      <h3 class="section-title">About Me</h3>
+      <div class="about-grid reveal">
+        <p>
+          I work at an internet service provider where I handle fibre installations,
+          equipment setup and fixing customer connection problems.
+          I enjoy making sure people stay connected and that every network runs reliably.
+        </p>
+        <p>
+          Outside of work, I am learning to code and building small projects with HTML, CSS and
+          JavaScript, mixing my networking experience with web development.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="section alt">
+      <h3 class="section-title">My Skills</h3>
+      <div class="cards">
+
+        <article class="card reveal">
+          <div class="card-icon">🔆</div>
+          <h4>Fibre Optics</h4>
+          <p>Fibre patching, cable management and light-level checks in cabinets and the field.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">📡</div>
+          <h4>Network Equipment</h4>
+          <p>Working with OLTs, ONTs, switches and customer routers: setup, configuration and fault finding.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">🛜</div>
+          <h4>MikroTik &amp; WireGuard</h4>
+          <p>Learning router configuration and secure VPN tunnels with MikroTik devices.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">🤝</div>
+          <h4>Customer Support</h4>
+          <p>Clear communication, patient troubleshooting and getting customers back online fast.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">💻</div>
+          <h4>Web Development</h4>
+          <p>Building pages with HTML, CSS and JavaScript. Always learning and improving.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== FIELD WORK GALLERY ========== -->
+    <section id="work" class="section">
+      <h3 class="section-title">Field Work</h3>
+      <p class="section-sub">Click a photo to enlarge it.</p>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section alt">
+      <h3 class="section-title">Get In Touch</h3>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p>Have a project or a network problem that needs fixing? Send me a message.</p>
+          <ul>
+            <!-- FILL IN: put your number in BOTH places below (href and the visible text) -->
+            <li>📞 <a href="tel:"></a></li>
+            <!-- FILL IN: put your email in BOTH places below (href and the visible text) -->
+            <li>✉️ <a href="mailto:"></a></li>
+            <li>📍 Kenya</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal">
+          <input type="text" id="cName" placeholder="Your name" required>
+          <textarea id="cMessage" rows="5" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send on WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Full Name. All rights reserved.</p>
+  </footer>
+
+  <!-- Photo viewer (opens when you click a gallery photo) -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightboxImg" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
