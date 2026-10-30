@@ -7,12 +7,12 @@
 
 /* Dark theme (default) */
 [data-theme="dark"] {
-  --bg: #0a1428;
-  --bg-alt: #0e1b36;
-  --surface: #14264a;
-  --text: #e8edf7;
-  --muted: #9aa8c4;
-  --border: rgba(255, 255, 255, 0.1);
+  --bg: #2b2d31;
+  --bg-alt: #34373c;
+  --surface: #3e4147;
+  --text: #f1f2f4;
+  --muted: #b5b9c0;
+  --border: rgba(255, 255, 255, 0.12);
 }
 
 /* Light theme */
