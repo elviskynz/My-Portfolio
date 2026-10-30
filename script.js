@@ -16,8 +16,10 @@ const roles = ["Network Technician", "Fibre Specialist", "Router Configurator", 
 // and add a new line like: { src: "photo2.jpg", caption: "What it shows" },
 const photos = [
   { src: "profile.jpg", caption: "At the OLT cabinet, fibre patching" },
-  // { src: "photo2.jpg", caption: "Fibre installation" },
-  // { src: "photo3.jpg", caption: "Router setup at a customer site" },
+  { src: "photo2.jpg", caption: "Aerial cable work on a utility pole" },
+  { src: "photo3.jpg", caption: "Geared up on site with safety and climbing kit" },
+  { src: "photo4.jpg", caption: "Sorting out cabling on the pole" },
+  { src: "photo5.jpg", caption: "Fibre splice tray with neatly organised splices" },
 ];
 
 /* =====================================================
