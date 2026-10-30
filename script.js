@@ -7,7 +7,7 @@ document.documentElement.classList.add("js");
 
 // FILL IN: your WhatsApp number between the quotes.
 // Country code + number, no + or spaces (Kenya example: 254712345678)
-const whatsappNumber = "";
+const whatsappNumber = "254758796040";
 
 // The words that change in the hero section
 const roles = ["Network Technician", "Fibre Specialist", "Router Configurator", "Web Developer in Training"];
